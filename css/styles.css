@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif, color:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    background-color: #696FC7;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.card {
+    background: #A6B1E1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+        margin-left: 20px;
+        margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+    color: #646060;
+}
+    a:hover {
+    color: #4d0fc0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+th {
+    background-color: #696FC7;
+    color: rgb(0, 0, 0);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #696FC7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+}
+    
