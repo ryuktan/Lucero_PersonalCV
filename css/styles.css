@@ -5,9 +5,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif, color:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #696FC7;
+    background-color: #355872;
     padding: 20px;
 }
 
@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
 }
 .card {
-    background: #A6B1E1;
+    background: #8E977D;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -61,7 +61,7 @@ th, td {
 }
 
 th {
-    background-color: #696FC7;
+    background-color: #6594B1;
     color: rgb(0, 0, 0);
 }
 
@@ -79,7 +79,7 @@ input, textarea {
 
 button {
     padding: 10px;
-    background-color: #696FC7;
+    background-color: #233D4D;
     color: white;
     border: none;
     cursor: pointer;
@@ -94,3 +94,11 @@ header {
     width: 100%;
 }
     
+.dark-mode {
+    background-color:#222;
+    color:white;
+}    
+
+.hidden {
+    display:none;
+    }

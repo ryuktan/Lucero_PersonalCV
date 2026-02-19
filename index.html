@@ -6,6 +6,7 @@
     <title>Personal Online CV</title>
 </head>
 <body>
+    <button id="themeToggle">Toggle Dark Mode</button>
     <div class="container">
     <section class="card">
     <header>
@@ -44,6 +45,8 @@
 
                 <section class="card">
                     <h2>Skills</h2>
+                    <button id="toggleSkills">Show/Hide Skills</button>
+                    <section class="card" id="skillsSection">
 
                     <ul>
                         <li>HTML</li>
@@ -106,13 +109,13 @@
                 <form>
                     <label>
                         Name:<br>
-                        <input type="text" placeholder="Your name">
+                        <input type="text" id="name" placeholder="Name">
                     </label>
                     <br><br>
 
                     <label>
                         Email:<br>
-                        <input type="email" placeholder="Your email">
+                        <input type="email" id="email" placeholder="Email">
                     </label>
                     <br><br>
 
@@ -122,7 +125,7 @@
                     </label>
                     <br><br>
 
-                    <button type="submit">Send</button>
+                    <button type="submit" id="submitBtn">Send</button> 
                 </form>
             </section>
             <footer>
@@ -132,6 +135,6 @@
         </div>
     </main>
 
-
+<script src="js/script.js"></script>
 </body>
 </html>
