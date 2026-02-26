@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #355872;
+    padding: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.card {
+  position: relative;
+    background: #8E977D;
+    max-width: 800px;          
+    margin: 0 auto 20px;       
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+        margin-left: 20px;
+        margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+    color: #646060;
+}
+    a:hover {
+    color: #4d0fc0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed; 
+}
+
+td, th {
+    word-wrap: break-word;
+}
+
+th, td {
+
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+th {
+    background-color: #6594B1;
+    color: rgb(0, 0, 0);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+form label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+form br {
+    display: none;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 0 8px 0;
+}
+
+button {
+    padding: 10px;
+    background-color: #233D4D;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+}
+    
+.dark-mode {
+    background-color:#222;
+    color:white;
+}    
+
+.hidden {
+    display:none;
+    }
+    
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #111;
+        color: #e5e7eb;
+    }
+    .card {
+        background: #1f2937;
+        color: #e5e7eb;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    }
+    th {
+        background-color: #374151;
+        color: #e5e7eb;
+    }
+    a { color: #9bd0ff; }
+}
+
+.dark-mode .card {
+    background: #1f2937;
+    color: #f4f5f7;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+

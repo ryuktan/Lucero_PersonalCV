@@ -52,6 +52,11 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
+    table-layout: fixed; /* evenly distribute column space */
+}
+
+td, th {
+    word-wrap: break-word; /* wrap long text instead of stretching cells */
 }
 
 th, td {
