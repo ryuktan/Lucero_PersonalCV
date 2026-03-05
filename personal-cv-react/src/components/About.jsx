@@ -1,10 +1,11 @@
 import profileImage from '../assets/profile.jpg';
+import Card from "./Card";
 
 function About() {
     return (
+        <Card title="About Me">
         <div className="container">
             <section className="card">
-                <h2>About Me</h2>
                 <div style={{ textAlign: 'center' }}>
                     <img src={profileImage} alt="Profile photo" width="250" style={{ borderRadius: '50%' }} />
                 </div>
@@ -26,6 +27,7 @@ function About() {
                 </p>
             </section>
         </div>
+        </Card>
     );
 }
 export default About;
