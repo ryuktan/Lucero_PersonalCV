@@ -8,10 +8,35 @@ function Contact() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        alert(`Thank you ${name}!`);
-        setName("");
-        setEmail("");
-        setMessage("");
+
+        // Send data to the PHP backend
+        fetch("http://localhost/cv-api/process.php", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ 
+                name: name,
+                email: email,
+                message: message 
+            })
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.message) {
+                alert(data.message);
+            } else {
+                alert("Unexpected error occurred.");
+            }
+            
+            setName("");
+            setEmail("");
+            setMessage("");
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            alert("Could not connect to the server. Make sure XAMPP Apache is running.");
+        });
     }
 
     return (
@@ -27,6 +52,7 @@ function Contact() {
                         value={name} 
                         onChange={(e) => setName(e.target.value)} 
                         style={{ width: '100%', padding: '8px' }} 
+                        required
                     />
                     <input
                         type="email"
@@ -34,12 +60,14 @@ function Contact() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         style={{ width: '100%', padding: '8px' }} 
+                        required
                     />
                     <textarea 
                         placeholder="Your message" 
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         style={{ width: '100%', minHeight: '80px', padding: '8px' }}
+                        required
                     />
                     <button type="submit" id="submitBtn" style={{ alignSelf: 'center', width: '80%', padding: '10px' }}>
                         Send Message
