@@ -9,7 +9,6 @@ function Contact() {
     function handleSubmit(e) {
         e.preventDefault();
 
-        // Send data to the PHP backend
         fetch("http://localhost/cv-api/process.php", {
             method: "POST",
             headers: {
